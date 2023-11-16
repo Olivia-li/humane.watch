@@ -1,9 +1,12 @@
-from flask import Flask, request
+from flask import Flask, request, send_file
+from dotenv import load_dotenv
+from openai import OpenAI
+import whisper
 import os
 
 app = Flask(__name__)
 
-@app.route('/upload', methods=['POST'])
+@app.route('/api', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         app.logger.error('No file part in the request')
@@ -15,11 +18,25 @@ def upload_file():
         app.logger.error('No selected file')
         return 'No selected file', 400
 
-    if file:
-        # Save in the current directory
-        file.save(os.path.join(os.getcwd(), file.filename))
-        return 'File uploaded successfully', 200
+    path = os.path.join(os.getcwd(), file.filename)
+    file.save(path)
+
+    client = OpenAI()
+    model = whisper.load_model("base")
+    result = model.transcribe(path, language="en")
+
+    response = client.audio.speech.create(
+      model="tts-1",
+      voice="alloy",
+      response_format="aac",
+      input=result["text"]
+    )
+
+    response.stream_to_file("output.m4a")
+    
+    return send_file("output.m4a", mimetype="audio/m4a")
 
 if __name__ == '__main__':
+    load_dotenv() 
     app.run(host='0.0.0.0', port=3000, debug=True)
 
