@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7FB2F7F2B05AB8D004EA487 /* humane Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C7FB2F7E2B05AB8D004EA487 /* humane Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C7FB2F842B05AB8D004EA487 /* humaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F832B05AB8D004EA487 /* humaneApp.swift */; };
+		C7FB2F862B05AB8D004EA487 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F852B05AB8D004EA487 /* ContentView.swift */; };
+		C7FB2F882B05AB8E004EA487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FB2F872B05AB8E004EA487 /* Assets.xcassets */; };
+		C7FB2F8B2B05AB8E004EA487 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FB2F8A2B05AB8E004EA487 /* Preview Assets.xcassets */; };
+		C7FB2F992B05B2C7004EA487 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F982B05B2C7004EA487 /* InterfaceController.swift */; };
+		C7FB2F9B2B05B2F6004EA487 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FB2F9A2B05B2F6004EA487 /* CoreML.framework */; };
+		C7FB2F9D2B05CCF2004EA487 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F9C2B05CCF2004EA487 /* DataExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7FB2F802B05AB8D004EA487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7FB2F722B05AB8D004EA487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7FB2F7D2B05AB8D004EA487;
+			remoteInfo = "humane Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7FB2F912B05AB8E004EA487 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C7FB2F7F2B05AB8D004EA487 /* humane Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C7FB2F782B05AB8D004EA487 /* humane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = humane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FB2F7E2B05AB8D004EA487 /* humane Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "humane Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FB2F832B05AB8D004EA487 /* humaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = humaneApp.swift; sourceTree = "<group>"; };
+		C7FB2F852B05AB8D004EA487 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7FB2F872B05AB8E004EA487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7FB2F8A2B05AB8E004EA487 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7FB2F962B05B193004EA487 /* libAXSpeechManager.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAXSpeechManager.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/usr/lib/libAXSpeechManager.tbd; sourceTree = DEVELOPER_DIR; };
+		C7FB2F982B05B2C7004EA487 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C7FB2F9A2B05B2F6004EA487 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/CoreML.framework; sourceTree = DEVELOPER_DIR; };
+		C7FB2F9C2B05CCF2004EA487 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7FB2F7B2B05AB8D004EA487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7FB2F9B2B05B2F6004EA487 /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7FB2F712B05AB8D004EA487 = {
+			isa = PBXGroup;
+			children = (
+				C7FB2F822B05AB8D004EA487 /* humane Watch App */,
+				C7FB2F792B05AB8D004EA487 /* Products */,
+				C7FB2F952B05B185004EA487 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7FB2F792B05AB8D004EA487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB2F782B05AB8D004EA487 /* humane.app */,
+				C7FB2F7E2B05AB8D004EA487 /* humane Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7FB2F822B05AB8D004EA487 /* humane Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB2F832B05AB8D004EA487 /* humaneApp.swift */,
+				C7FB2F852B05AB8D004EA487 /* ContentView.swift */,
+				C7FB2F982B05B2C7004EA487 /* InterfaceController.swift */,
+				C7FB2F9C2B05CCF2004EA487 /* DataExtension.swift */,
+				C7FB2F872B05AB8E004EA487 /* Assets.xcassets */,
+				C7FB2F892B05AB8E004EA487 /* Preview Content */,
+			);
+			path = "humane Watch App";
+			sourceTree = "<group>";
+		};
+		C7FB2F892B05AB8E004EA487 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB2F8A2B05AB8E004EA487 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7FB2F952B05B185004EA487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB2F9A2B05B2F6004EA487 /* CoreML.framework */,
+				C7FB2F962B05B193004EA487 /* libAXSpeechManager.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7FB2F772B05AB8D004EA487 /* humane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7FB2F922B05AB8E004EA487 /* Build configuration list for PBXNativeTarget "humane" */;
+			buildPhases = (
+				C7FB2F762B05AB8D004EA487 /* Resources */,
+				C7FB2F912B05AB8E004EA487 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7FB2F812B05AB8D004EA487 /* PBXTargetDependency */,
+			);
+			name = humane;
+			productName = humane;
+			productReference = C7FB2F782B05AB8D004EA487 /* humane.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C7FB2F7D2B05AB8D004EA487 /* humane Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7FB2F8E2B05AB8E004EA487 /* Build configuration list for PBXNativeTarget "humane Watch App" */;
+			buildPhases = (
+				C7FB2F7A2B05AB8D004EA487 /* Sources */,
+				C7FB2F7B2B05AB8D004EA487 /* Frameworks */,
+				C7FB2F7C2B05AB8D004EA487 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "humane Watch App";
+			productName = "humane Watch App";
+			productReference = C7FB2F7E2B05AB8D004EA487 /* humane Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7FB2F722B05AB8D004EA487 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C7FB2F772B05AB8D004EA487 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C7FB2F7D2B05AB8D004EA487 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C7FB2F752B05AB8D004EA487 /* Build configuration list for PBXProject "humane" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7FB2F712B05AB8D004EA487;
+			productRefGroup = C7FB2F792B05AB8D004EA487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7FB2F772B05AB8D004EA487 /* humane */,
+				C7FB2F7D2B05AB8D004EA487 /* humane Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7FB2F762B05AB8D004EA487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7FB2F7C2B05AB8D004EA487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7FB2F8B2B05AB8E004EA487 /* Preview Assets.xcassets in Resources */,
+				C7FB2F882B05AB8E004EA487 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7FB2F7A2B05AB8D004EA487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7FB2F992B05B2C7004EA487 /* InterfaceController.swift in Sources */,
+				C7FB2F9D2B05CCF2004EA487 /* DataExtension.swift in Sources */,
+				C7FB2F862B05AB8D004EA487 /* ContentView.swift in Sources */,
+				C7FB2F842B05AB8D004EA487 /* humaneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7FB2F812B05AB8D004EA487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7FB2F7D2B05AB8D004EA487 /* humane Watch App */;
+			targetProxy = C7FB2F802B05AB8D004EA487 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C7FB2F8C2B05AB8E004EA487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7FB2F8D2B05AB8E004EA487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C7FB2F8F2B05AB8E004EA487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"humane Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = RSR8K28Z58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = humane;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone to communicate with the AI";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Need to recognize speech to create AI assistant answers";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oliviali.humane.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C7FB2F902B05AB8E004EA487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"humane Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = RSR8K28Z58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = humane;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone to communicate with the AI";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Need to recognize speech to create AI assistant answers";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oliviali.humane.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		C7FB2F932B05AB8E004EA487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSR8K28Z58;
+				INFOPLIST_KEY_CFBundleDisplayName = humane;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oliviali.humane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7FB2F942B05AB8E004EA487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSR8K28Z58;
+				INFOPLIST_KEY_CFBundleDisplayName = humane;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oliviali.humane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7FB2F752B05AB8D004EA487 /* Build configuration list for PBXProject "humane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7FB2F8C2B05AB8E004EA487 /* Debug */,
+				C7FB2F8D2B05AB8E004EA487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7FB2F8E2B05AB8E004EA487 /* Build configuration list for PBXNativeTarget "humane Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7FB2F8F2B05AB8E004EA487 /* Debug */,
+				C7FB2F902B05AB8E004EA487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7FB2F922B05AB8E004EA487 /* Build configuration list for PBXNativeTarget "humane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7FB2F932B05AB8E004EA487 /* Debug */,
+				C7FB2F942B05AB8E004EA487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7FB2F722B05AB8D004EA487 /* Project object */;
+}
