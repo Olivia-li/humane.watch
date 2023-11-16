@@ -12,8 +12,7 @@
 		C7FB2F862B05AB8D004EA487 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F852B05AB8D004EA487 /* ContentView.swift */; };
 		C7FB2F882B05AB8E004EA487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FB2F872B05AB8E004EA487 /* Assets.xcassets */; };
 		C7FB2F8B2B05AB8E004EA487 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FB2F8A2B05AB8E004EA487 /* Preview Assets.xcassets */; };
-		C7FB2F992B05B2C7004EA487 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F982B05B2C7004EA487 /* InterfaceController.swift */; };
-		C7FB2F9B2B05B2F6004EA487 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FB2F9A2B05B2F6004EA487 /* CoreML.framework */; };
+		C7FB2F992B05B2C7004EA487 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F982B05B2C7004EA487 /* AudioRecorder.swift */; };
 		C7FB2F9D2B05CCF2004EA487 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB2F9C2B05CCF2004EA487 /* DataExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,9 +48,10 @@
 		C7FB2F872B05AB8E004EA487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7FB2F8A2B05AB8E004EA487 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7FB2F962B05B193004EA487 /* libAXSpeechManager.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAXSpeechManager.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/usr/lib/libAXSpeechManager.tbd; sourceTree = DEVELOPER_DIR; };
-		C7FB2F982B05B2C7004EA487 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C7FB2F982B05B2C7004EA487 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		C7FB2F9A2B05B2F6004EA487 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/CoreML.framework; sourceTree = DEVELOPER_DIR; };
 		C7FB2F9C2B05CCF2004EA487 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		C7FB2FA02B05E57B004EA487 /* humane-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "humane-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FB2F9B2B05B2F6004EA487 /* CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +86,10 @@
 		C7FB2F822B05AB8D004EA487 /* humane Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C7FB2FA02B05E57B004EA487 /* humane-Watch-App-Info.plist */,
 				C7FB2F832B05AB8D004EA487 /* humaneApp.swift */,
 				C7FB2F852B05AB8D004EA487 /* ContentView.swift */,
-				C7FB2F982B05B2C7004EA487 /* InterfaceController.swift */,
+				C7FB2F982B05B2C7004EA487 /* AudioRecorder.swift */,
 				C7FB2F9C2B05CCF2004EA487 /* DataExtension.swift */,
 				C7FB2F872B05AB8E004EA487 /* Assets.xcassets */,
 				C7FB2F892B05AB8E004EA487 /* Preview Content */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FB2F992B05B2C7004EA487 /* InterfaceController.swift in Sources */,
+				C7FB2F992B05B2C7004EA487 /* AudioRecorder.swift in Sources */,
 				C7FB2F9D2B05CCF2004EA487 /* DataExtension.swift in Sources */,
 				C7FB2F862B05AB8D004EA487 /* ContentView.swift in Sources */,
 				C7FB2F842B05AB8D004EA487 /* humaneApp.swift in Sources */,
@@ -355,7 +355,9 @@
 				DEVELOPMENT_TEAM = RSR8K28Z58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "humane-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = humane;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone to communicate with the AI";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Need to recognize speech to create AI assistant answers";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -387,7 +389,9 @@
 				DEVELOPMENT_TEAM = RSR8K28Z58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "humane-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = humane;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone to communicate with the AI";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Need to recognize speech to create AI assistant answers";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
