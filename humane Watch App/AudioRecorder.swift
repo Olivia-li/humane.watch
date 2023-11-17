@@ -13,14 +13,17 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
         super.init()
         setupAudioRecorder()
     }
-    
+
     private func setupAudioRecorder() {
         let audioSession = AVAudioSession.sharedInstance()
         do {
             try audioSession.setCategory(.playAndRecord, mode: .default)
             try audioSession.setActive(true)
 
-            let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.m4a")
+            let timestamp = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .long)
+            let uniqueFilename = "recording_\(timestamp).m4a"
+            let audioFilename = getDocumentsDirectory().appendingPathComponent(uniqueFilename)
+
 
             let settings = [
                 AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
@@ -37,6 +40,7 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
     }
 
     func startRecording() {
+        setupAudioRecorder()
         audioRecorder?.record()
         isRecording = true
     }
@@ -49,6 +53,8 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
        if !flag {
            print("Recording finished unsuccessfully")
+       } else {
+           uploadAudioFile()
        }
    }
 

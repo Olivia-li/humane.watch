@@ -8,7 +8,6 @@ struct ContentView: View {
             if recordingManager.isRecording {
                 Button("Stop Recording") {
                     recordingManager.stopRecording()
-                    recordingManager.uploadAudioFile()
                 }
             } else {
                 Button("Start Recording") {
