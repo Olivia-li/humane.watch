@@ -21,15 +21,26 @@ def upload_file():
     path = os.path.join(os.getcwd(), file.filename)
     file.save(path)
 
-    client = OpenAI()
-    model = whisper.load_model("base")
     result = model.transcribe(path, language="en")
+    
+    prompt = result["text"]
+    
+    completion = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
+    )
 
+    print(completion.choices[0].message)
+
+    # Convert GPT-4 response to audio
     response = client.audio.speech.create(
       model="tts-1",
       voice="alloy",
       response_format="aac",
-      input=result["text"]
+      input=completion.choices[0].message
     )
 
     response.stream_to_file("output.m4a")
@@ -38,5 +49,7 @@ def upload_file():
 
 if __name__ == '__main__':
     load_dotenv() 
+    client = OpenAI()
+    model = whisper.load_model("base")
     app.run(host='0.0.0.0', port=3000, debug=True)
 
