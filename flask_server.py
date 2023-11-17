@@ -37,7 +37,7 @@ def upload_file():
         model="gpt-4-1106-preview",
         max_tokens=80,
         messages=[
-            {"role": "system", "content": "You are a helpful assistant. Give short and concise answers. If you hear a language that's not in English. Translate it to English."},
+            {"role": "system", "content": "You are a helpful assistant. Give only short answers. Be extremely concise. If you hear a language that's not in English. Translate it to English."},
             {"role": "user", "content": prompt}
         ]
     )
