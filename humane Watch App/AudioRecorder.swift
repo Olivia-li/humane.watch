@@ -67,7 +67,7 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
     func uploadAudioFile() {
         guard let audioURL = audioRecorder?.url else { return }
 
-        let url = URL(string: "http://192.168.86.82:3000/api")!
+        let url = URL(string: "http://localhost:3000/api")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
